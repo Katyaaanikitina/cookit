@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+* {
+  margin: 0;
+}
+
+html{
+  overflow: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
+  color: var(--black-color);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+a, button {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+}
