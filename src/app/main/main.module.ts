@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { MainRoutingModule } from './main-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +11,8 @@ import { HomePageComponent } from './components/home-page/home-page.component';
     HomePageComponent
   ],
   imports: [
-    MainRoutingModule
+    MainRoutingModule,
+    SharedModule
   ],
   providers: []
 })
