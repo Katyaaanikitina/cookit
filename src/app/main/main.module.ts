@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { MainRoutingModule } from './main-routing.module';
 import { HeaderComponent } from './components/header/header.component';
-import { HomePageComponent } from './components/home-page/home-page.component';
+import { MainPageComponent } from './components/main-page/main-page.component';
 import { SharedModule } from '../shared/shared.module';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    HomePageComponent
+    MainPageComponent,
+    HomeComponent
   ],
   imports: [
     MainRoutingModule,
