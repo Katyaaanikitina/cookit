@@ -6,6 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './components/home/home.component';
 import { RecipesSectionComponent } from './components/recipes-section/recipes-section.component';
 import { RecipesListComponent } from './components/recipes-list/recipes-list.component';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { RecipesListComponent } from './components/recipes-list/recipes-list.com
     RecipesListComponent
   ],
   imports: [
+    CommonModule,
     MainRoutingModule,
     SharedModule
   ],

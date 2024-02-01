@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SandboxRecipesService } from '../../services/sandbox-recipes-service/sandbox-recipes.service';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
+  constructor (public recipesSandboxService: SandboxRecipesService) {}
 }

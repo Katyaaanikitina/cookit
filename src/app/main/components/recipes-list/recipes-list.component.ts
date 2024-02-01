@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { RecipesService } from '../../services/recipes-service/recipes.service';
 
 @Component({
   selector: 'app-recipes-list',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./recipes-list.component.scss']
 })
 export class RecipesListComponent {
+  @Input() recipes!: any;
 
+  constructor() {}
+
+  ngOnInit() {
+  }
 }
