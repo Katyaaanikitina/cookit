@@ -7,6 +7,9 @@ import { LogoComponent } from './components/logo/logo.component';
     LogoComponent
   ],
   imports: [],
+  exports: [
+    LogoComponent
+  ],
   providers: []
 })
 export class SharedModule { }

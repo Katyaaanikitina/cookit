@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding: 0 46px;
+  background-color: var(--white-color);
+  border-bottom: solid 1px var(--grey-super-light-color);
+
+  &_buttons {
+    display: flex;
+    gap: 12px;
+  }
+}
