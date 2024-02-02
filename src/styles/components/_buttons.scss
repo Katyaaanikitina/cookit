@@ -22,11 +22,11 @@
 // ----------Buttons due to the type----------
 
 .btn-primary {
-  background: var(--yellow-dark-color);
-  color: var(--white-color);
+  background: var(--yellow-light-color);
+  color: var(--yellow-dark-color);
 
     &:hover, &:focus {
-        background: var(--yellow-light-color);
+        color: var(--black-color);
         box-shadow: 0px 5px 5px -3px rgba(127, 143, 164, 0.20), 0px 3px 14px 2px rgba(127, 143, 164, 0.12);
     }
 
@@ -43,8 +43,8 @@
   border: 1px solid var(--yellow-dark-color);
 
   &:hover, &:focus {
-      border: 1px solid var(--yellow-light-color);
-      color: var(--yellow-light-color);
+      border: 1px solid var(--black-color);
+      color: var(--black-color);
       box-shadow: 0px 5px 5px -3px rgba(127, 143, 164, 0.20), 0px 3px 14px 2px rgba(127, 143, 164, 0.12);
   }
   &:disabled {
