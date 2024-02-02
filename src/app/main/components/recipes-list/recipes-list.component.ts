@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { RecipesService } from '../../services/recipes-service/recipes.service';
+import { Recipe } from 'src/interfaces/recipe';
 
 @Component({
   selector: 'app-recipes-list',
@@ -7,7 +7,7 @@ import { RecipesService } from '../../services/recipes-service/recipes.service';
   styleUrls: ['./recipes-list.component.scss']
 })
 export class RecipesListComponent {
-  @Input() recipes!: any;
+  @Input() recipes!: Recipe[];
 
   constructor() {}
 

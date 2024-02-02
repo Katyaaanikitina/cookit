@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Recipe } from 'src/interfaces/recipe';
 
 @Component({
   selector: 'app-recipes-section',
@@ -6,7 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./recipes-section.component.scss']
 })
 export class RecipesSectionComponent {
-  @Input() recipes!: any;
+  @Input() recipes!: Recipe[];
 
   ngOnInit() {
   }
