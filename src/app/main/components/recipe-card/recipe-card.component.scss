@@ -1,0 +1,13 @@
+.recipe {
+  width: 400px;
+  height: 434px;
+  background-image: linear-gradient(var(--white-color), var(--yellow-light-color));
+  border-radius: 30px;
+  padding: 16px 16px 32px 16px;
+
+  &_picture {
+    width: 368px;
+    height: 250px;
+    border-radius: inherit;
+  }
+}

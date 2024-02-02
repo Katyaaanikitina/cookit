@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { RecipesSectionComponent } from './components/recipes-section/recipes-section.component';
 import { RecipesListComponent } from './components/recipes-list/recipes-list.component';
 import { CommonModule } from '@angular/common';
+import { RecipeCardComponent } from './components/recipe-card/recipe-card.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CommonModule } from '@angular/common';
     MainPageComponent,
     HomeComponent,
     RecipesSectionComponent,
-    RecipesListComponent
+    RecipesListComponent,
+    RecipeCardComponent
   ],
   imports: [
     CommonModule,
