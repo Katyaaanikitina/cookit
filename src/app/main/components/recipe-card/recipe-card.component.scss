@@ -1,6 +1,9 @@
 .recipe {
   width: 400px;
   height: 434px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   background-image: linear-gradient(var(--white-color), var(--yellow-light-color));
   border-radius: 30px;
   padding: 16px 16px 32px 16px;
@@ -9,5 +12,11 @@
     width: 368px;
     height: 250px;
     border-radius: inherit;
+  }
+
+  &_title {
+    font-size: var(--h3-font-size);
+    padding: 0px 8px;
+    font-weight: 500;
   }
 }
