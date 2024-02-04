@@ -1,16 +1,17 @@
 .recipe {
-  width: 400px;
-  height: 434px;
+  width: 330px;
+  height: 384px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 24px;
   background-image: linear-gradient(var(--white-color), var(--yellow-light-color));
   border-radius: 30px;
-  padding: 16px 16px 32px 16px;
+  padding: 16px 16px 22px 16px;
 
   &_picture {
-    width: 368px;
-    height: 250px;
+    width: 298px;
+    height: 200px;
     border-radius: inherit;
   }
 
@@ -18,5 +19,10 @@
     font-size: var(--h3-font-size);
     padding: 0px 8px;
     font-weight: 500;
+    height: 56px;
+  }
+
+  &_info {
+    padding: 0px 8px;
   }
 }
