@@ -7,8 +7,8 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { HomeComponent } from './components/home/home.component';
 import { RecipesSectionComponent } from './components/recipes-section/recipes-section.component';
 import { RecipesListComponent } from './components/recipes-list/recipes-list.component';
-import { RecipeCardComponent } from './components/recipe-card/recipe-card.component';
 import { SharedModule } from '../shared/shared.module';
+import { RecipeCardComponent } from './components/recipes-list/components/recipe-card/recipe-card.component';
 
 
 @NgModule({
