@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, Subscribable, Subscription, map, mergeAll, of, tap } from 'rxjs';
+import { BehaviorSubject, Observable, Subscription, map } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Recipe } from 'src/interfaces/recipe';
 
