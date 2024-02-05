@@ -1,5 +1,5 @@
 <div class="container">
-  <ng-container *ngIf="recipes$ |async as recipes">
+  <ng-container *ngIf="recipes$ | async as recipes">
     <app-recipes-section [recipes]="recipes"></app-recipes-section>
   </ng-container>
 </div>

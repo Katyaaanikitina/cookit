@@ -1,5 +1,7 @@
+@import '/src/styles/base/variables.scss';
+
 .titleH2 {
-  color: var(--black-color);
-  font-size: var(--h2-font-size);
+  color: $black-color;
+  font-size: $h2-font-size;
   font-weight: 600;
 }
