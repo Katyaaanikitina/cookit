@@ -9,6 +9,7 @@ import { RecipesSectionComponent } from './components/recipes-section/recipes-se
 import { RecipesListComponent } from './components/recipes-list/recipes-list.component';
 import { SharedModule } from '../shared/shared.module';
 import { RecipeCardComponent } from './components/recipes-list/components/recipe-card/recipe-card.component';
+import { ChangeCookingTimeFormatPipe } from './components/recipes-list/pipes/change-cooking-time-format.pipe';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { RecipeCardComponent } from './components/recipes-list/components/recipe
     HomeComponent,
     RecipesSectionComponent,
     RecipesListComponent,
-    RecipeCardComponent
+    RecipeCardComponent,
+    ChangeCookingTimeFormatPipe
   ],
   imports: [
     CommonModule,
