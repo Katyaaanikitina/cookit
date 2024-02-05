@@ -12,6 +12,6 @@ export class SandboxRecipesService {
   constructor(private recipesService: RecipesService) { }
 
   getRecipes(): Observable<Recipe[]> {
-    return this.recipesService.loadRecipes();
+    return this.recipesService.fetchRecipes();
   }
 }
