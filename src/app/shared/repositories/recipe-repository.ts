@@ -7,9 +7,9 @@ import { environment } from "src/environments/environment";
   providedIn: 'root'
 })
 export class RecipesRepository {
-  constructor(private http: HttpClient) {}
+  constructor(private readonly _http: HttpClient) {}
 
   getRecipes() {
-    return this.http.get(`${environment.API_BASE_URL}recipes.json`);
+    return this._http.get(`${environment.API_BASE_URL}recipes.json`);
   }
 }

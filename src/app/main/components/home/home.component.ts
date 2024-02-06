@@ -6,15 +6,14 @@ import { SandboxRecipesService } from '../../services/sandbox-recipes-service/sa
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  templateUrl: './home.component.html'
 })
 export class HomeComponent {
   recipes$!: Observable<Recipe[]>;
 
-  constructor (public recipesSandboxService: SandboxRecipesService) {}
+  constructor (private readonly _recipesSandboxService: SandboxRecipesService) {}
 
   ngOnInit() {
-    this.recipes$ = this.recipesSandboxService.getRecipes();
+    this.recipes$ = this._recipesSandboxService.getRecipes();
   }
 }
