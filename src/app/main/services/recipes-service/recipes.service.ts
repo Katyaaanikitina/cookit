@@ -9,7 +9,7 @@ import { Recipe } from 'src/interfaces/recipe';
 })
 export class RecipesService {
 
-  constructor(private recipeRepository: RecipesRepository) { }
+  constructor(private readonly recipeRepository: RecipesRepository) { }
 
   fetchRecipes(): Observable<Recipe[]> {
     return this.recipeRepository.getRecipes()

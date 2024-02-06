@@ -9,7 +9,7 @@ import { RecipesService } from '../recipes-service/recipes.service';
 })
 export class SandboxRecipesService {
 
-  constructor(private recipesService: RecipesService) { }
+  constructor(private readonly recipesService: RecipesService) { }
 
   getRecipes(): Observable<Recipe[]> {
     return this.recipesService.fetchRecipes();
