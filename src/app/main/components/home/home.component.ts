@@ -11,9 +11,9 @@ import { SandboxRecipesService } from '../../services/sandbox-recipes-service/sa
 export class HomeComponent {
   recipes$!: Observable<Recipe[]>;
 
-  constructor (private readonly recipesSandboxService: SandboxRecipesService) {}
+  constructor (private readonly _recipesSandboxService: SandboxRecipesService) {}
 
   ngOnInit() {
-    this.recipes$ = this.recipesSandboxService.getRecipes();
+    this.recipes$ = this._recipesSandboxService.getRecipes();
   }
 }

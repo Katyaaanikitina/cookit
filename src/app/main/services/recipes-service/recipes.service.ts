@@ -9,10 +9,10 @@ import { Recipe } from 'src/interfaces/recipe';
 })
 export class RecipesService {
 
-  constructor(private readonly recipeRepository: RecipesRepository) { }
+  constructor(private readonly _recipeRepository: RecipesRepository) { }
 
   fetchRecipes(): Observable<Recipe[]> {
-    return this.recipeRepository.getRecipes()
+    return this._recipeRepository.getRecipes()
       .pipe(
         map((recipe: {[key: string]: any}) => {
           return Object.keys(recipe).map((key) => ({...recipe[key], id: key}))
