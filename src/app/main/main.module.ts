@@ -8,7 +8,6 @@ import { RecipesSectionComponent } from './components/recipes-section/recipes-se
 import { RecipesListComponent } from './components/recipes-list/recipes-list.component';
 import { SharedModule } from '../shared/shared.module';
 import { RecipeCardComponent } from './components/recipes-list/components/recipe-card/recipe-card.component';
-import { ChangeCookingTimeFormatPipe } from './components/recipes-list/pipes/change-cooking-time-format.pipe';
 import { MainPageComponent } from './components/main-page/main-page.component';
 
 
@@ -19,8 +18,7 @@ import { MainPageComponent } from './components/main-page/main-page.component';
     HomeComponent,
     RecipesSectionComponent,
     RecipesListComponent,
-    RecipeCardComponent,
-    ChangeCookingTimeFormatPipe
+    RecipeCardComponent
   ],
   imports: [
     CommonModule,

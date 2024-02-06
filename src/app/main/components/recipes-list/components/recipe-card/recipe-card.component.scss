@@ -29,22 +29,4 @@
     justify-content: space-between;
     padding: 0px 8px;
   }
-
-  &_time {
-    display: flex;
-    align-items: center;
-    gap: 2px;
-
-    &_icon {
-      width: 22px;
-      height: 22px;
-    }
-
-    &_value {
-      font-size: $body-font-size;
-      color: $grey-dark-color;
-      font-weight: 500;
-      letter-spacing: -1px;
-    }
-  }
 }
