@@ -1,3 +1,5 @@
+@import '/src/styles/base/variables.scss';
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -5,8 +7,8 @@
   height: 80px;
   width: 100%;
   padding: 0 46px;
-  background-color: var(--white-color);
-  border-bottom: solid 1px var(--grey-super-light-color);
+  background-color: $white-color;
+  border-bottom: solid 1px $grey-super-light-color;
 
   &_buttons {
     display: flex;

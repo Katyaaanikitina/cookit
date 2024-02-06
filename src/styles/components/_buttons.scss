@@ -16,40 +16,40 @@
   height: 36px;
   width: 110px;
   letter-spacing: 0.48px;
-  font-size: var(--body-font-size);
+  font-size: $body-font-size;
 }
 
 // ----------Buttons due to the type----------
 
 .btn-primary {
-  background: var(--yellow-dark-color);
-  color: var(--white-color);
+  background: $yellow-light-color;
+  color: $yellow-dark-color;
 
     &:hover, &:focus {
-        background: var(--yellow-light-color);
+        color: $black-color;
         box-shadow: 0px 5px 5px -3px rgba(127, 143, 164, 0.20), 0px 3px 14px 2px rgba(127, 143, 164, 0.12);
     }
 
     &:disabled {
-        background: var(--grey-light-color);
+        background: $grey-light-color;
         box-shadow: none;
         cursor: not-allowed;
     }
 }
 
 .btn-outline {
-  color: var(--yellow-dark-color);
-  background: var(--white-color);
-  border: 1px solid var(--yellow-dark-color);
+  color: $yellow-dark-color;
+  background: $white-color;
+  border: 1px solid $yellow-dark-color;
 
   &:hover, &:focus {
-      border: 1px solid var(--yellow-light-color);
-      color: var(--yellow-light-color);
+      border: 1px solid $black-color;
+      color: $black-color;
       box-shadow: 0px 5px 5px -3px rgba(127, 143, 164, 0.20), 0px 3px 14px 2px rgba(127, 143, 164, 0.12);
   }
   &:disabled {
-      color: var(--grey-light-color);
-      border: var(--grey-light-color);
+      color: $grey-light-color;
+      border: $grey-light-color;
       box-shadow: none;
       cursor: not-allowed;
   }

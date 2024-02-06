@@ -1,10 +1,13 @@
-import { ComponentFixture } from '@angular/core/testing';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePageComponent } from './components/home-page/home-page.component';
+
+import { MainPageComponent } from './components/main-page/main-page.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  {path: '', component: HomePageComponent, children: []}
+  {path: '', component: MainPageComponent, children: [
+    {path: '', component: HomeComponent}
+  ]}
 ];
 
 @NgModule({
