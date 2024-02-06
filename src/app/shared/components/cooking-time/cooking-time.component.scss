@@ -6,13 +6,13 @@
   gap: 2px;
 
   &_icon {
-    width: 22px;
-    height: 22px;
+    font-size: 20px;
+    color: $blue-200;
   }
 
   &_value {
     font-size: $body-font-size;
-    color: $grey-dark-color;
+    color: $grey-300;
     font-weight: 500;
     letter-spacing: -1px;
   }

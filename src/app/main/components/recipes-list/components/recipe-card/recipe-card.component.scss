@@ -2,12 +2,11 @@
 
 .recipe {
   width: 330px;
-  height: 384px;
+  height: 364px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 24px;
-  background-image: linear-gradient($white-color, $yellow-light-color);
+  gap: 18px;
   border-radius: 30px;
   padding: 16px 16px 22px 16px;
 
@@ -15,13 +14,15 @@
     width: 298px;
     height: 200px;
     border-radius: inherit;
+    object-fit: cover;
   }
 
   &_title {
     font-size: $h3-font-size;
+    color: $blue-600;
     padding: 0px 8px;
-    font-weight: 500;
-    height: 56px;
+    font-weight: 600;
+    height: 52px;
   }
 
   &_info {
