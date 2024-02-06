@@ -1,18 +1,18 @@
 @import '/src/styles/base/variables.scss';
 
 .recipe {
-  width: 330px;
-  height: 364px;
+  width: 318px;
+  height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 18px;
   border-radius: 30px;
-  padding: 16px 16px 22px 16px;
+  padding: 10px 10px 16px 10px;
 
   &_picture {
     width: 298px;
-    height: 200px;
+    height: 180px;
     border-radius: inherit;
     object-fit: cover;
   }
