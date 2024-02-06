@@ -3,9 +3,10 @@
   <p class="recipe_title">{{recipe.title}}</p>
   <div class="recipe_info">
     <div class="recipe_time">
-      <img src="/assets/images/Timer.png" class="recipe_time_icon" alt="Clock">
+      <img class="recipe_time_icon" src="/assets/images/Timer.png" alt="Clock">
       <p class="recipe_time_value">{{recipe.cookingTime | changeCookingTimeFormat}}</p>
     </div>
-    <p class="icon-star-full"></p>
+
+    <app-stars-rate [rating]="recipe.rating"></app-stars-rate>
   </div>
 </div>

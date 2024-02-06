@@ -25,6 +25,8 @@
   }
 
   &_info {
+    display: flex;
+    justify-content: space-between;
     padding: 0px 8px;
   }
 
@@ -34,8 +36,8 @@
     gap: 2px;
 
     &_icon {
-      width: 24px;
-      height: 24px;
+      width: 22px;
+      height: 22px;
     }
 
     &_value {

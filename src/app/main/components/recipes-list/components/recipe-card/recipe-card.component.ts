@@ -8,5 +8,5 @@ import { Recipe } from 'src/interfaces/recipe';
   styleUrls: ['./recipe-card.component.scss']
 })
 export class RecipeCardComponent {
- @Input() recipe!: Recipe;
+  @Input() recipe!: Recipe;
 }

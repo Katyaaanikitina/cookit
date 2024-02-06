@@ -1,0 +1,12 @@
+@import '/src/styles/base/variables.scss';
+
+.rating {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+  &_star {
+    font-size: 18px;
+    color: $yellow-dark-color;
+  }
+}
