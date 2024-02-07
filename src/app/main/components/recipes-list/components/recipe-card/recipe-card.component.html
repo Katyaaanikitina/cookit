@@ -1,6 +1,6 @@
 <div class="recipe">
   <img [src]="recipe.picture" class="recipe_picture" alt="Dish picture">
-  <p class="recipe_title">{{recipe.title}}</p>
+  <p class="recipe_title" [appThreeDotsForLongText]="2">{{recipe.title | titlecase}}</p>
   <div class="recipe_info">
     <app-cooking-time [cookingTime]="recipe.cookingTime"></app-cooking-time>
     <app-stars-rate [rating]="recipe.rating"></app-stars-rate>
