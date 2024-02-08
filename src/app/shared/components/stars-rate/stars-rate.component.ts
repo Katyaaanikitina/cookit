@@ -10,12 +10,14 @@ export class StarsRateComponent {
   starsArray!: string[];
 
   ngOnInit() {
-    this.starsArray = this.formStarsArray(this.rating);
+    this.starsArray = this.createStarsArray(this.rating);
   }
 
-  formStarsArray(rating: number) {
-    const fullStarsNumber = Math.floor(rating);
-    const halfStarsNumber = Number.isInteger(rating) ? 0 : 1;
+  createStarsArray(rating: number) {
+    let ratingVal = Math.min(Math.max(rating, 0), 5);
+
+    const fullStarsNumber = Math.floor(ratingVal);
+    const halfStarsNumber = Number.isInteger(ratingVal) ? 0 : 1;
     const emptyStarsNumber = 5 - fullStarsNumber - halfStarsNumber;
     return  [...Array(fullStarsNumber).fill('icon-star-full'),
              ...Array(halfStarsNumber).fill('icon-star-half'),
