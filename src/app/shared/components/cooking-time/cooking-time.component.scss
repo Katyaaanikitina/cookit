@@ -1,4 +1,4 @@
-@import '/src/styles/base/variables.scss';
+@import 'variables.scss';
 
 .time {
   display: flex;
@@ -16,4 +16,8 @@
     font-weight: 500;
     letter-spacing: -1px;
   }
+}
+
+.icon-stopwatch:before {
+  content: "\e952";
 }

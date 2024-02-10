@@ -7,8 +7,8 @@ import { CookingTime } from 'src/interfaces/recipe';
 export class ChangeCookingTimeFormatPipe implements PipeTransform {
 
   transform(cookingTime: CookingTime): string {
-    const hourOrHours = (cookingTime.hours > 1) ? 'hours' : 'hour';
-    const isHours = (cookingTime.hours === 0) ? '' : `${cookingTime.hours} ${hourOrHours}`;
-    return `${isHours} ${cookingTime.minutes} min`
+    const prefix = (cookingTime.hours > 1) ? 'hours' : 'hour';
+    const hours = (cookingTime.hours === 0) ? '' : `${cookingTime.hours} ${prefix}`;
+    return `${hours} ${cookingTime.minutes} min`
   }
 }

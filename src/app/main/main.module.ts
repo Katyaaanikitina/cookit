@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MainRoutingModule } from './main-routing.module';
+import { SharedModule } from '../shared/shared.module';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { RecipesSectionComponent } from './components/recipes-section/recipes-section.component';
-import { RecipesListComponent } from './components/recipes-list/recipes-list.component';
-import { SharedModule } from '../shared/shared.module';
-import { RecipeCardComponent } from './components/recipes-list/components/recipe-card/recipe-card.component';
-import { MainPageComponent } from './components/main-page/main-page.component';
+import { MainPageComponent } from './main-page.component';
+import { RecipesListComponent } from './components/recipes-section/recipes-list/recipes-list.component';
+import { RecipeCardComponent } from './components/recipes-section/recipes-list/recipe-card/recipe-card.component';
 
 
 @NgModule({
