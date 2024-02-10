@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, Input, QueryList, ViewChild, ViewChildren } from '@angular/core';
 
 import { Recipe } from 'src/interfaces/recipe';
 
@@ -9,4 +9,11 @@ import { Recipe } from 'src/interfaces/recipe';
 })
 export class RecipeCardComponent {
   @Input() recipe!: Recipe;
+  @ViewChild('title') title!: ElementRef;
+
+  titleHeight!: number;
+
+  ngAfterViewInit() {
+    this.titleHeight = this.title.nativeElement.offsetHeight;
+  }
 }

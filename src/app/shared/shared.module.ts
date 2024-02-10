@@ -6,8 +6,6 @@ import { TitleH2Component } from './components/title-h2/title-h2.component';
 import { StarsRateComponent } from './components/stars-rate/stars-rate.component';
 import { CookingTimeComponent } from './components/cooking-time/cooking-time.component';
 import { ChangeCookingTimeFormatPipe } from './pipes/change-cooking-time-format/change-cooking-time-format.pipe';
-import { ThreeDotsForLongTextDirective } from './directives/three-dots-for-long-text/three-dots-for-long-text.directive';
-
 
 @NgModule({
   declarations: [
@@ -15,8 +13,7 @@ import { ThreeDotsForLongTextDirective } from './directives/three-dots-for-long-
     TitleH2Component,
     StarsRateComponent,
     CookingTimeComponent,
-    ChangeCookingTimeFormatPipe,
-    ThreeDotsForLongTextDirective
+    ChangeCookingTimeFormatPipe
   ],
   imports: [
     CommonModule
@@ -25,8 +22,7 @@ import { ThreeDotsForLongTextDirective } from './directives/three-dots-for-long-
     LogoComponent,
     TitleH2Component,
     StarsRateComponent,
-    CookingTimeComponent,
-    ThreeDotsForLongTextDirective
+    CookingTimeComponent
   ],
   providers: []
 })
