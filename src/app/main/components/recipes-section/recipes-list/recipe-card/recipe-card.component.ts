@@ -1,5 +1,4 @@
-import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, Input, QueryList, ViewChild, ViewChildren } from '@angular/core';
-
+import { ChangeDetectorRef, Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { Recipe } from 'src/interfaces/recipe';
 
 @Component({
@@ -13,7 +12,10 @@ export class RecipeCardComponent {
 
   titleHeight!: number;
 
+  constructor(private readonly _changeDetectorRef: ChangeDetectorRef) {}
+
   ngAfterViewInit() {
     this.titleHeight = this.title.nativeElement.offsetHeight;
+    this._changeDetectorRef.detectChanges();
   }
 }

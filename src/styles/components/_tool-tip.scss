@@ -1,4 +1,19 @@
+@import 'variables.scss';
+
 .tool-tip {
+  display: none;
   position: absolute;
-  top: -50px;
+  align-self: center;
+  text-align: center;
+  padding: 4px;
+  top: -56px;
+  width: 320px;
+  background-color: $grey-100;
+  color: $blue-200;
+  border-radius: 6px;
 }
+
+.recipe_title__container:hover .tool-tip {
+  display: block;
+}
+
