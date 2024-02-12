@@ -1,0 +1,33 @@
+@import 'variables';
+
+.recipe {
+  width: 318px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  border-radius: 30px;
+  padding: 10px 10px 16px 10px;
+
+  &_picture {
+    width: 298px;
+    height: 180px;
+    border-radius: inherit;
+    object-fit: cover;
+  }
+
+  &_title {
+    font-size: $h3-font-size;
+    color: $blue-600;
+    padding: 0px 8px;
+    font-weight: 600;
+    height: 52px;
+  }
+
+  &_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8px;
+  }
+}
