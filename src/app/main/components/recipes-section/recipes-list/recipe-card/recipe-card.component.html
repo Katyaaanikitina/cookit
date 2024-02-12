@@ -8,7 +8,7 @@
     </p>
     <p *ngIf="title.classList.contains('three-dots-in-the-end')"
        class="tool-tip">
-       {{recipe.title}}
+       {{recipe.title | titlecase}}
     </p>
   </div>
 
