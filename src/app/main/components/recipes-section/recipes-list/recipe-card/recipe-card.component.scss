@@ -3,12 +3,19 @@
 .recipe {
   width: 318px;
   height: 320px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 18px;
   border-radius: 30px;
   padding: 10px 10px 16px 10px;
+
+  &_favorite-mark {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+  }
 
   &_picture {
     width: 298px;

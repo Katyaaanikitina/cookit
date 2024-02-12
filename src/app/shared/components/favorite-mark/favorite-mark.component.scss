@@ -1,0 +1,29 @@
+@import 'variables';
+
+.favorite-mark {
+  font-size: 22px;
+  padding-top: 4px;
+
+  &_container {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  &_is-favorite {
+    color: $orange-300;
+    background-color: $orange-100;
+  }
+
+  &_not-favorite {
+    color: $grey-200;
+    background-color: $grey-100;
+  }
+}
+
+.icon-heart:before {
+  content: "\e9da";
+}
