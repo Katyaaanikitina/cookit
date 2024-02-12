@@ -14,7 +14,7 @@ export class StarsRateComponent {
   }
 
   createStarsArray(rating: number) {
-    let ratingVal = Math.min(Math.max(rating, 0), 5);
+    const ratingVal = Math.min(Math.max(rating, 0), 5);
 
     const fullStarsNumber = Math.floor(ratingVal);
     const halfStarsNumber = Number.isInteger(ratingVal) ? 0 : 1;
