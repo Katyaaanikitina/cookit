@@ -1,5 +1,10 @@
 @import 'variables';
 
+@mixin is-favorite {
+  color: $orange-300;
+  background-color: $orange-100;
+};
+
 .favorite-mark {
   font-size: 22px;
   padding-top: 4px;
@@ -11,11 +16,19 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      @include is-favorite;
+    }
+
+    &:hover .favorite-mark {
+      font-size: 24px;
+    }
   }
 
   &_is-favorite {
-    color: $orange-300;
-    background-color: $orange-100;
+    @include is-favorite;
   }
 
   &_not-favorite {
