@@ -1,8 +1,20 @@
 <div class="recipe">
   <img [src]="recipe.picture" class="recipe_picture" alt="Dish picture">
-  <p class="recipe_title">{{recipe.title}}</p>
+
+  <div class="recipe_title__container">
+    <p class="recipe_title"
+       [class.three-dots-in-the-end]="titleHeight > 53" #title>
+       {{recipe.title | titlecase}}
+    </p>
+    <p *ngIf="title.classList.contains('three-dots-in-the-end')"
+       class="tool-tip">
+       {{recipe.title | titlecase}}
+    </p>
+  </div>
+
   <div class="recipe_info">
     <app-cooking-time [cookingTime]="recipe.cookingTime"></app-cooking-time>
     <app-stars-rate [rating]="recipe.rating"></app-stars-rate>
   </div>
 </div>
+
