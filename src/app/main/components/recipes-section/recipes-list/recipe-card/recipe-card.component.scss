@@ -29,7 +29,13 @@
     color: $blue-600;
     padding: 0px 8px;
     font-weight: 600;
-    height: 52px;
+    min-height: 52px;
+
+    &__container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &_info {
@@ -38,3 +44,4 @@
     padding: 0px 8px;
   }
 }
+
