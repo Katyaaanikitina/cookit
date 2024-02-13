@@ -1,0 +1,45 @@
+@import 'variables';
+
+.modal-box {
+  position: fixed;
+  width: 520px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 20px;
+  background: $white-100;
+  z-index: 6;
+  transition: all 0.3s ease;
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    &_text {
+      font-size: $body-big-font-size;
+      text-align: center;
+      max-width: 380px;
+    }
+  }
+
+  &_img {
+    width: 206px;
+  }
+
+  &_buttons {
+    display: flex;
+    gap: 24px;
+  }
+
+  &_close-icon {
+    align-self: flex-end;
+    margin-bottom: 24px;
+  }
+}
