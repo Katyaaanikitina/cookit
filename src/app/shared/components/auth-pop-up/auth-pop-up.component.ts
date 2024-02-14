@@ -8,7 +8,7 @@ import { AuthPopUpService } from './auth-pop-up-service/auth-pop-up.service';
   styleUrls: ['./auth-pop-up.component.scss']
 })
 export class AuthPopUpComponent {
-  popUpText!: string | '';
+  popUpText!: string;
   private _popUpInfoSub!: Subscription;
 
   constructor(private readonly _authPopUpService: AuthPopUpService) {}

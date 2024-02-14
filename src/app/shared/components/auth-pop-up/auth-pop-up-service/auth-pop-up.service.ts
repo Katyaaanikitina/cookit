@@ -5,7 +5,7 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthPopUpService {
-  private readonly _popUpInfo$ = new Subject<string | ''>();
+  private readonly _popUpInfo$ = new Subject<string>();
   public readonly popUpInfo$ = this._popUpInfo$.asObservable();
 
   showAuthPopUp(popUpInfo: string): void {
