@@ -11,7 +11,7 @@ export class SandboxRecipesService {
 
   constructor(private readonly _recipesService: RecipesService) { }
 
-  getRecipes(): Observable<Recipe[]> {
-    return this._recipesService.fetchRecipes();
+  getRecipes(startKey: string, offset: number): Observable<Recipe[]> {
+    return this._recipesService.fetchRecipes(startKey, offset);
   }
 }

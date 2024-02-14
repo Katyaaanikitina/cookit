@@ -14,6 +14,6 @@ export class HomeComponent {
   constructor (private readonly _recipesSandboxService: SandboxRecipesService) {}
 
   ngOnInit() {
-    this.recipes$ = this._recipesSandboxService.getRecipes();
+    this.recipes$ = this._recipesSandboxService.getRecipes('-NpQF9q_WrvsleQOjnET', 5);
   }
 }
