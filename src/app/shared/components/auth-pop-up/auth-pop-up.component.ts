@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { NeedAuthPopUpService } from './need-auth-pop-up-service/need-auth-pop-up.service';
+import { AuthPopUpService } from './auth-pop-up-service/auth-pop-up.service';
 
 @Component({
-  selector: 'app-need-auth-pop-up',
-  templateUrl: './need-auth-pop-up.component.html',
-  styleUrls: ['./need-auth-pop-up.component.scss']
+  selector: 'app-auth-pop-up',
+  templateUrl: './auth-pop-up.component.html',
+  styleUrls: ['./auth-pop-up.component.scss']
 })
-export class NeedAuthPopUpComponent {
+export class AuthPopUpComponent {
   popUpText!: string | '';
   private _popUpInfoSub!: Subscription;
 
-  constructor(private readonly _authPopUpService: NeedAuthPopUpService) {}
+  constructor(private readonly _authPopUpService: AuthPopUpService) {}
 
   ngOnInit() {
     this._popUpInfoSub = this._authPopUpService.popUpInfo$.subscribe(info => {this.popUpText = info});

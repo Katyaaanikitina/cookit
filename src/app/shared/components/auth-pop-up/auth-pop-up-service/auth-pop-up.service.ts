@@ -4,9 +4,9 @@ import { Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class NeedAuthPopUpService {
+export class AuthPopUpService {
   private readonly _popUpInfo$ = new Subject<string | ''>();
-  popUpInfo$ = this._popUpInfo$.asObservable();
+  public readonly popUpInfo$ = this._popUpInfo$.asObservable();
 
   showAuthPopUp(popUpInfo: string): void {
     this._popUpInfo$.next(popUpInfo);
